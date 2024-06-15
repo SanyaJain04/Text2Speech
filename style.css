@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    background-color: hsl(274, 61%, 55%);
+    background-image: url("bg4.jpg"); 
+    background-size: cover;
+
+} 
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    /* background: linear-gradient(45deg, #4a8233d4, #aa17e4); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+.hero h1{
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+
+}
+.hero h1 span{
+   color: whitesmoke;
+}
+textarea{
+    width:600px;
+    height: 250px;
+    /* background: #dce6e8; */
+    background: linear-gradient(45deg, #94a2cdd4, #b679dc);
+    color: #fff;
+    font-size: 15px; 
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+}
+textarea::placeholder{
+    font-size: 16px;
+    color: rgb(92, 85, 85);  
+}
+.row{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+button{
+    background: #c086e4;
+    color: rgb(92, 85, 85);  
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    align-items: center;
+}
+button img{
+    width:16px;
+    margin-right: 10px;
+}
+select{
+    flex:1;
+    color: #fff;
+    background: #94a2cdd4;
+    height: 50px;
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+    appearance: none;
+    background-image: url(dropdown.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: calc(100% - 20px);
+    background-position-y: 20px;
+}
+
+@media screen and (mad-width: 600px)
+{
+    textarea {
+        height: 150px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    select {
+        width: 100%;
+        margin-top: 10px;
+    } 
+}
